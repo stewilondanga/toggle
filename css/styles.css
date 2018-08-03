@@ -1,3 +1,7 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
   font-family: courier;
@@ -38,19 +42,19 @@ h1 {
   &:nth-child(2) .dd_btn {
     background: #2ecc71;
     &:active {
-      background: #27ae60;
+      background-color: #27ae60;
     }
   }
   &:nth-child(3) .dd_btn {
     background: #3498db;
     &:active {
-      background: #2980b9;
+      background-color: #2980b9;
     }
   }
   &:nth-child(4) .dd_btn {
     background: #e74c3c;
     &:active {
-      background: #c0392b;
+      background-color: #c0392b;
     }
   }
   .dd_btn {
@@ -85,7 +89,7 @@ h1 {
       color: #666;
       background: #f9f9f9;
       &:hover {
-        background: #ecf0f1;
+        background-color: #ecf0f1;
       }
       &:active {
         background-color: #bdc3c7;
@@ -134,13 +138,9 @@ h1 {
   line-height: 100%;
 }
 
-*, :after, :before {
-  box-sizing: border-box;
-}
 
-/*body {
 
-}
+/*
 
 .toggle {
   position: absolute;
