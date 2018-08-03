@@ -1,104 +1,216 @@
 body {
   text-align: center;
   font-family: courier;
-  background-image:url("../assets/image.jpeg");
+  background-image: url("../assets/image.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
+h1 {
+  font-family: helvetica;
+  font-weight: normal;
+  text-align: center;
+  color: #c0c0c0;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  width: 375px;
+  margin: 0 auto;
+  border-bottom: 3px solid #f3f3f3;
+}
 
-    h1 {
-    	font-family: helvetica;
-    	font-weight: normal;
-    	text-align: center;
-    	color: #c0c0c0;
-    	padding-top: 50px;
-    	padding-bottom: 10px;
-    	width: 375px;
-    	margin: 0 auto;
-    	border-bottom: 3px solid #f3f3f3;
+.containers {
+  width: 520px;
+  margin: 20px auto;
+}
+
+.menu_btn {
+  font-family: helvetica;
+  width: 125px;
+  float: left;
+  margin-left: 5px;
+  &:first-child .dd_btn {
+    background: #f1c40f;
+    &:active {
+      background: #f39c12;
     }
-
-    .containers {
-    	width: 520px;
-    	margin: 20px auto;
+  }
+  &:nth-child(2) .dd_btn {
+    background: #2ecc71;
+    &:active {
+      background: #27ae60;
     }
-
-    .menu_btn {
-    	font-family: helvetica;
-    	width: 125px;
-    	float: left;
-    	margin-left: 5px;
-    	&:first-child .dd_btn {
-    		background: #f1c40f;
-    		&:active {
-    			background: #f39c12;
-    		}
-    	}
-    	&:nth-child(2) .dd_btn {
-    		background: #2ecc71;
-    		&:active {
-    			background: #27ae60;
-    		}
-    	}
-    	&:nth-child(3) .dd_btn {
-    		background: #3498db;
-    		&:active {
-    			background: #2980b9;
-    		}
-    	}
-    	&:nth-child(4) .dd_btn {
-    		background: #e74c3c;
-    		&:active {
-    			background: #c0392b;
-    		}
-    	}
-    	.dd_btn {
-    		height: 50px;
-    		width: 125px;
-    		color: #fff;
-    		font-size: 18px;
-    		border: 0px;
-    		z-index: 3;
-    		float: left;
-    		cursor: pointer;
-      	background-color:#E19E19;
-    		&:active {
-      		background-color:#946810;
-    		}
-    		&:focus {
-    			outline: none;
-    		}
-    	}
-    	.dd {
-    		position: absolute;
-    		width: 255px;
-    		margin-top: 55px;
-    		background: white;
-    		text-align: center;
-    		a {
-    			width: 100%;
-    			display: block;
-    			height: 100%;
-    			padding: 15px 0 15px 0;
-    			text-decoration: none;
-    			color: #666;
-    			background: #f9f9f9;
-    			&:hover {
-    				background: #ecf0f1;
-    			}
-    			&:active {
-    				background-color: #bdc3c7;
-    				color: #fff;
-    			}
-    		}
-    	}
+  }
+  &:nth-child(3) .dd_btn {
+    background: #3498db;
+    &:active {
+      background: #2980b9;
     }
+  }
+  &:nth-child(4) .dd_btn {
+    background: #e74c3c;
+    &:active {
+      background: #c0392b;
+    }
+  }
+  .dd_btn {
+    height: 50px;
+    width: 125px;
+    color: #fff;
+    font-size: 18px;
+    border: 0px;
+    z-index: 3;
+    float: left;
+    cursor: pointer;
+    background-color: #E19E19;
+    &:active {
+      background-color: #946810;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .dd {
+    position: absolute;
+    width: 255px;
+    margin-top: 55px;
+    background: white;
+    text-align: center;
+    a {
+      width: 100%;
+      display: block;
+      height: 100%;
+      padding: 15px 0 15px 0;
+      text-decoration: none;
+      color: #666;
+      background: #f9f9f9;
+      &:hover {
+        background: #ecf0f1;
+      }
+      &:active {
+        background-color: #bdc3c7;
+        color: #fff;
+      }
+    }
+  }
+}
 
-.cal{ display:inline-block; background:#ffe; color:#555; font-size:6px; text-align:center; transform:scale(1); transition:all 0.2s linear;}
-.cal:hover{ transform:scale(2.5);transition:all 0.4s linear;}
-.cal caption{ background:#d44; color:#eee; font-size:15px;}
-.cal th{ color:#aaa;line-height:200%;}
-.cal th:first-child{ color:#f00;}
-.cal th:last-child{ color:#04d;}
-.cal td{ padding:0 2px; line-height:100%;}
+.cal {
+  display: inline-block;
+  background: #ffe;
+  color: #555;
+  font-size: 6px;
+  text-align: center;
+  transform: scale(1);
+  transition: all 0.2s linear;
+}
+
+.cal:hover {
+  transform: scale(2.5);
+  transition: all 0.4s linear;
+}
+
+.cal caption {
+  background: #d44;
+  color: #eee;
+  font-size: 15px;
+}
+
+.cal th {
+  color: #aaa;
+  line-height: 200%;
+}
+
+.cal th:first-child {
+  color: #f00;
+}
+
+.cal th:last-child {
+  color: #04d;
+}
+
+.cal td {
+  padding: 0 2px;
+  line-height: 100%;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+/*body {
+  margin: 60px auto;
+  text-align: center;
+  background-color: #ff9295;
+  transition: background-color 0.2s cubic-bezier(0, -1.85, .27, 1.75);
+}
+
+.toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%; // padding: 0 200px;
+  transform: translate3d(-50%, -50%, 0);
+  &:before {
+    content: 'OFF';
+    position: absolute;
+    left: -56px;
+    top: 30px;
+    font-size: 18px;
+    color: #fff;
+  }
+  &:after {
+    content: 'ON';
+    position: absolute;
+    right: -46px;
+    top: 30px;
+    font-size: 18px;
+    color: rgba(253, 15, 21, 0.31);
+  }
+  label {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #FD1015;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.1), 0px 9px 15px 0px #ef4247;
+    -webkit-tap-highlight-color: transparent;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.2s cubic-bezier(0, -1.85, .27, 1.75);
+      height: 42px;
+      width: 42px;
+      background-color: #fd0f14;
+      border-radius: 46px;
+      box-shadow: inset 0px 0px 0px 8px #fff;
+    }
+  }
+  input {
+    display: none;
+    &:checked+label {
+      background-color: #57de72;
+      box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.1), 0px 9px 15px 0px rgba(3, 132, 28, 0.5411764705882353);
+      &:before {
+        width: 10px;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.on {
+  background-color: #6fc57c;
+  .toggle {
+    &:before {
+      color: rgba(62, 160, 81, 0.89);
+    }
+    &:after {
+      color: #fff;
+    }
+  }
+}
+*/
