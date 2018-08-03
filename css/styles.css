@@ -30,9 +30,9 @@ h1 {
   float: left;
   margin-left: 5px;
   &:first-child .dd_btn {
-    background: #f1c40f;
+    background-color: #f1c40f;
     &:active {
-      background: #f39c12;
+      background-color: #f39c12;
     }
   }
   &:nth-child(2) .dd_btn {
