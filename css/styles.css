@@ -11,6 +11,20 @@ body {
   transition: background-color 0.2s cubic-bezier(0, -1.85, .27, 1.75);
 }
 
+.toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%; // padding: 0 200px;
+  transform: translate3d(-50%, -50%, 0);
+  &:before {
+    content: 'OFF';
+    position: absolute;
+    left: -56px;
+    top: 30px;
+    font-size: 18px;
+    color: #fff;
+  }
+
 h1 {
   font-family: helvetica;
   font-weight: normal;
@@ -142,19 +156,6 @@ h1 {
 
 /*
 
-.toggle {
-  position: absolute;
-  top: 50%;
-  left: 50%; // padding: 0 200px;
-  transform: translate3d(-50%, -50%, 0);
-  &:before {
-    content: 'OFF';
-    position: absolute;
-    left: -56px;
-    top: 30px;
-    font-size: 18px;
-    color: #fff;
-  }
   &:after {
     content: 'ON';
     position: absolute;
